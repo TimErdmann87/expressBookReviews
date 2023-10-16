@@ -7,6 +7,8 @@ const getAllBooks = async(url)=>{
     const books = res.data.books;
     console.log("\nList of books:")
     console.log(books)
+
+    return books
 }
 
 const getBookByIsbn = async(url, isbn)=>{
@@ -14,6 +16,8 @@ const getBookByIsbn = async(url, isbn)=>{
     const book = res.data;
     console.log(`\nGet book detail by ISBN '${isbn}':`)
     console.log(book)
+
+    return book
 }
 
 const getBookByAuthor = async(url, author)=>{
@@ -21,6 +25,8 @@ const getBookByAuthor = async(url, author)=>{
     const book = res.data;
     console.log(`\nGet book detail by author '${author}':`)
     console.log(book)
+
+    return book
 }
 
 const getBookByTitle = async(url, title)=>{
@@ -28,6 +34,8 @@ const getBookByTitle = async(url, title)=>{
     const book = res.data;
     console.log(`\nGet book detail by title '${title}':`)
     console.log(book)
+
+    return book
 }
 
 
